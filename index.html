@@ -22,6 +22,8 @@
         }
         h2{
         font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+            color: black;
+            text-decoration: none; 
         }
         .one{
             border-width:5px;
@@ -30,29 +32,48 @@
             padding-left: 20px;
             color:snow;
             font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-            font-size:28px; 
+            font-size:28px;
         }
         p.two{
             font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+            font-size:16px;
         }
         .buttonbox{
             position: relative;
             bottom:0;
             padding:16px;
         }
-        .button{
-            background-color: snow;
-            border: none;
-            color: black;
+        .button1, .button2{
+            
             padding: 16px;
             text-align: center;
             text-decoration: none;
             font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
             display: inline-block;
             font-size: 16px;
-            margin: 4px 2px;
             cursor: pointer;
             border-radius: 12px;
+        }
+        .button1{
+            background-color: snow;
+            border: none;
+            margin: 4px 2px;
+            display: inline-block;
+            color: black;
+        }
+        .button2{
+            background-color: snow;
+            border: solid;
+            border-width: 2px;
+            border-color: #ff7518;
+            color: black;
+        }
+        .portfoliorow {
+            display: flex;
+        }
+        .column {
+            flex: 33.33%;
+            padding: 5px;
         }
         .namehead{
             padding-top:40px;
@@ -66,9 +87,8 @@
         }
         img.pfp {
             border-radius:25px; 
-            width: 60%; 
-            max-width:300px; 
-            max-height:100%; 
+            width: 60%;
+            max-width: 275px; 
             padding-bottom:16px; 
             float:right; 
             filter: grayscale(100%);
@@ -81,29 +101,31 @@ div.container {width: 100%; border-style:dashed;}
 -->
 </head>
 
-<body style="background-color: orangered;">
+<body style="background-color:#ff7518;">
 <!--Home-->
     <div class="container" style="min-height: 90%; max-width:1500px;">
         <div class="namehead">
-         <h1> PASCAL VOYER-NGUYEN</h1>
+            <h1> PASCAL VOYER-NGUYEN</h1>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
                     <p class="one">
-                    
-                        Welcome, somehting about me. Test.
+                        UWaterloo Mechanical Engineering <br>
+                        <br>
+                        Always pushing the limits of modern transportation, medical 3D printing, and myself. <br> 
+                        Here's a glimpse of what I have been up to:
                     </p>
                     <div class="buttonbox">
-                        <button class="button">Resume</button>
-                        <button class="button">Email</button>
-                        <button class="button">Linkedin</button>
-                        <button class="button">Portfolio</button>
+                        <a class="button1" href="files/PVN-ResumeW20.pdf">Resume</a>
+                        <a class="button1" href="mailto:pascal.vn@waterloop.ca" title="Email:pascal.vn@waterloop.ca">Email</a>
+                        <a class="button1" href="https://ca.linkedin.com/in/pascal-voyer-nguyen" title="/in/pascal-voyer-nguyen">Linkedin</a>
+                        <a class="button1" href="files/PVN-PortfolioW20.pdf">Portfolio</a>
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="container">
-                        <img src="images/me.JPG" alt="me" class="pfp">
+                        <img src="images/me.JPG" title="me!" alt="me" class="pfp">
                     </div>
                 </div>
             </div>
@@ -113,53 +135,96 @@ div.container {width: 100%; border-style:dashed;}
     <div class="container" style="max-width:1500px; padding:0px 45px;">
         <div class="container projectcard" >
             <div class="container" style="height: 90px; width:300px;">
-               <h2 style="text-align:center;">⯆ PROJECTS ⯆</h2>
+               <h2 style="text-align:center;"> <a style="color:black; text-decoration:none;" href="#projects">⯆ PROJECTS ⯆</a></h2>
             </div>
-           <!-- Project1-->
+           <!-- Waterloop-->
             <div id="projects" class="container">
                 <div class="container">
-                    <h2>Project title1</h2>
+                    <h2>Waterloop</h2>
                 </div>        
                 <div class="row">
                     <div class="col-sm-6">
-                        <img src="images/wallE.jpg" style="width:75%;">
+                        <img src="images/podshell.png" alt="WaterloopPod" style="width:100%;">
+                        <img src="images/podfront.png" alt="WaterloopPod" style="width:100%;">
                     </div>
                     <div class="col-sm-6">
-                        <p class="two">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        <p class="two">Integration Lead and mechanical designer for Waterloop. Oversaw the prototyping, design and fabrication of Goose 5: the team's latest pod. Goose 5 incorporates our custom Linear Induction Motor and is designed to compete in the SpaceX Hyperloop competition.</p>
+                        <div style="text-align:center;"><a class="button2" href="https://teamwaterloop.ca/">Team Waterloop</a></div>
                     </div>
                 </div>
             </div>
-            <!-- Project2-->
+            <!-- 3DPrintHeart-->
             <div class="container">
                 <div class="container">
-                    <h2>Project title2</h2>
+                    <h2>3D Printed Heart Valves</h2>
                 </div>        
                 <div class="row">
                     <div class="col-sm-6">
-                        <img src="images/wallE.jpg" style="width:75%;">
+                        <div class="portfoliorow">
+                            <div class="column">
+                                <img src="images/heartmodel1.png" alt="AorticValve" style="width:100%">
+                            </div>
+                            <div class="column">
+                                <img src="images/heartmodel2.png" alt="PrintedValve" style="width:100%">
+                            </div>
+                        </div>
                     </div>
                     <div class="col-sm-6">
-                        <p class="two">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                        <p class="two">Created parametrised geometric models of fully functioning 3D printed heart valves. Built corresponding test rig to simulate blood flow and validate performance of the synthatic valve using MRI. </p>
+                        <p class="two">3D PrintHeart is a program at Toronto's Hospital for Sick Children (SickKids) that develops the use of 3D printed heart models to assist doctors in the management of patients with complex congenital heart disease. Hands-On Surgical Training (HOST) courses are also run where surgeons practice various procedures on 3D printed training simulators.</p>
+                        <a href="https://threedmedprint.biomedcentral.com/articles/10.1186/s41205-020-0057-8">📄 Simulation of semilunar valve function: computer-aided design, 3D printing and flow assessment with MR</a>
+                        <div style="text-align:center; margin-top:16px;"><a class="button2" href="https://www.3dprintheart.ca/">SickKids 3D PrintHeart Program</a></div>
                     </div>
                 </div>
             </div>
-            <!-- Project3-->
+            <!-- McMaster Designathon-->
+            <div class="container">
+                <div class="container">
+                    <h2> Lunar Rover Powertrain</h2>
+                </div>        
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="images/roverwheel.png" alt="wheel assembly" style="width:100%;">
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="two">Design of a full sized concept of a lunar rover powertrain for the 2019 McMaster Designathon: a CAD and design competition hosted at McMaster University. The concept replaced the original Apollo-era rover wheels and steering system by a dust-proof omnidirectional system. The design won first-place in its category.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 3990 T4K-->
+            <div class="container">
+                <div class="container">
+                    <h2><i>FIRST</i> Robotics</h2>
+                </div>        
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="images/CRA-2016.png" alt="FIRSTRobot" style="width:75%;">
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="two">Led the design and fabrication of 3 FRC caliber robots between 2014-2016. Robot operator for 8 competitions leading to 3 regional event victories and a semi-finalist finish at the world championship.</p>
+                        <p class="two">Mentored the team for mechanical design and game strategy during the 2017 season.</p>
+                        <div style="text-align:center;"><a class="button2" href="https://www.team3990.com/en/">Team 3990 - Tech for Kids</a></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--New Project
             <div class="container">
                 <div class="container">
                     <h2>Project title3</h2>
                 </div>        
                 <div class="row">
                     <div class="col-sm-6">
-                        <img src="images/wallE.jpg" style="width:75%;">
+                        <img src="images/wallE.jpg" alt="thing" style="width:75%;">
                     </div>
                     <div class="col-sm-6">
                         <p class="two">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                     </div>
                 </div>
             </div>
+            -->
 
         </div>
     </div>
-
 </body>
 </html>
